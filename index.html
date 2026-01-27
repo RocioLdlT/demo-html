@@ -6,21 +6,39 @@
 
 <!-- JS -> Javascript -> Definir el comportamiento de un documento -->
 
-
 <!-- Mas lenguajes de marcados son: readme.md o .json -->
 
 <!-- Para abrir comentario rápido CTRL+ç -->
 
-<!DOCTYPE html> <!-- Tipo de documento que siempre debe tener un archivo -->
-<html lang="es"></html> <!-- Accesibilidad de nuestra pagina web, para que el navegador entienda que nuestro tono al pronunciarlo por ejemplo sea en tono español y no en ruso -->
-    <meta charset="UFT-8">
+<!-- Para el favicon mejor usar png o svg, pesan menos y se ven mejor -->
+
+<!doctype html>
+<!-- Tipo de documento que siempre debe tener un archivo -->
+<html lang="es">
+    <!-- Accesibilidad de nuestra pagina web, para que el navegador entienda que nuestro tono al pronunciarlo por ejemplo sea en tono español y no en ruso -->
     <head>
+        <meta charset="UFT-8" />
         <title>Mi primera página web</title>
+        <link
+            rel="shortcut icon"
+            href="./world-1-svgrepo-com.svg"
+            type="image/svg+xml"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <script>
+            console.log("Hello")
+        </script>
     </head>
     <body>
-        <h1> Mi primera página web</h1> 
-        <p> Hola mundo </p>
-        <p lang="en"> Hello world </p>
+        <h1>Mi primera página web</h1>
+        <p>Hola mundo</p>
+        <p lang="en">Hello world</p>
         <ul>
             <li>uno</li>
             <li>dos</li>
@@ -28,14 +46,11 @@
         </ul>
         <a href="http://www.google.com">Google</a>
         <div>
-            <img src="./web imagen.jpg" alt="Representación simbólica de una web" width="200"/>
+            <img
+                src="./web imagen.jpg"
+                alt="Representación simbólica de una web"
+                width="200"
+            />
         </div>
     </body>
-</html>
-
-
-
-
-
-
-
+    </html>
