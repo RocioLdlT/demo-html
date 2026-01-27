@@ -25,7 +25,7 @@
     </head>
     <body>
         <h1>Web básica</h1>
-        <h2>Pasos iniciales para la creación de la estructura de una web básica</h2>
+        <h2>Estructura de una web básica</h2>
         <p><ul>
                 <li>Añade el "doctype html"</li>
                 <li>Añade su idioma con "html lang="es" (es importante por accesibilidad)</li>
@@ -33,9 +33,9 @@
                 <li>Seguidamente abrimos la cabeza, "head", donde introduciremos un título "title", éste es el que aparecerá en la ventana del navegador</li>
                 <li>Ahora comenzaremos con el cuerpo, "body", y añadiremos "h1" como nuestro título, presidiendo nuestro cuerpo (es preferible que solo haya un "h1")</li>
                 <li>Comienza con un párrafo "p"</li>
-            </ul>
+            </ul></p>
         <p>Puedes añadirle listados, imágenes o enlaces como veremos más adelante.</p>
-        <h3>Ejemplos de etiquetas básicas, atributos universales y atributos específicos</h3>
+        <h2>Etiquetas básicas, atributos universales y atributos específicos</h2>
         <ul>
             <li>Etiquetas básicas
                 <ul>
@@ -75,19 +75,27 @@
         <p>Esta web te servirá de ayuda para verificar con qué atributos casan las etiquetas o no, o si están anticuadas, además de mucha más información</p>
         <h3>Tres ejemplos de enlaces e imágenes de navegadores</h3>
         <ol>
-            <li><a href="https://www.google.com/?hl=es">Google</a></li>
-            <div>
-                <img src="./Img Google.jpg" alt="" width="200">
-            </div>
-            <li><a href="https://www.bing.com/?setlang=es">Bing</a></li>
-            <div>
-                <img src="./img Bing.jpg" alt="" width="200">
-            </div>
-            <li><a href="https://duckduckgo.com/">DuckDuckGo</a></li>
-            <div>
+            <li><a href="https://www.google.com/?hl=es" target="_blank">
+                <img src="./Img Google.jpg" alt="Google" width="200"></a></li>
+            <li><a href="https://www.bing.com/?setlang=es" target="_blank" title="Bing"><svg height="20px" width="20px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} </style> <g> <polygon class="st0" points="166.685,38.682 52.904,0 52.904,422.118 166.685,321.987 "></polygon> <polygon class="st0" points="206.501,133.117 253.157,249.166 319.397,270.361 56.324,431.215 170.095,512 459.096,336.78 459.096,216.17 "></polygon> </g> </g></svg></a></li>
+            <li><a href="https://duckduckgo.com/" target="_blank">DuckDuckGo</a></li>
                 <img src="./Img DuckDuckGo.jpg" alt="" width="200">
-            </div>
         </ol>
     </body>
 </html>
+
+<!-- Las <ul> y <ol> sí o sí solo validan <li> "list items",
+    El hijo directo de la lista tiene que ser un item, 
+    es decir, el hijo directo de <ul> y de <ol> va a ser siempre un item, <li>.
+    Es muy importante que las validen para SEo, por semántica, por accesibilidad, que sea más coherente y comprensible, etc. -->
+<!-- <target> Determina si el destino se carga en la misma pestaña, en una nueva o en un marco específico 
+    Si añado _blank, le indico que lo abra en una pestaña o ventana nueva a parte-->
+<!-- <title> dentro de la inserción de una imagen 
+    nos crea un target cuando nos posicionamos encima de la imagen 
+    indicando "Bing" que es el mensaje que le hemos incluido -->
+<!-- En este ejercicio aún no estamos publicando nuestra web,
+     entre otras cosas, porque solo está creada en LOCAL por eso nos sale siempre 127.0.0.1:3000 -->
+<!-- No se puede crear un párrafo que contenga párrafos, por se-mán-ti-ca -->
+<!-- Los atributos universales casan con todas las etiquetas; ej. p lang="zxx" (me invento un lenguaje :) ) -->
+<!-- Los párrafos no pueden tener listas dentro pero las listas dentro de <li> sí pueden contener diferentes párrafos -->
 
