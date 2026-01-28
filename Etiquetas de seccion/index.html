@@ -1,0 +1,103 @@
+<!-- 1. body
+2. section
+3. header
+4. footer
+5. article
+6. nav
+7. aside
+8. h1, h2, h3, h4, h5, and h6
+9. hgroup
+10.address -->
+
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UFT-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Etiquetas de sección</title>
+        <link
+            rel="shortcut icon"
+            href="/world-1-svgrepo-com.svg"
+            type="image/svg+xml"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <h1>
+                Header introduce contenido de navegación y es como un
+                encabezado. Cada sección puede tener su propio "header". 
+                "Body" es una sección, una obligatoria llamada siempre body por defecto.
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p>
+                Intento explicar las diferentes etiquetas aunque en la web no
+                tenga sentido. Por ejemplo, "main" no es una sección, 
+                es una forma de estructurar tus páginas donde se incluyen todas las secciones, artículos, 
+                incluso aside (si los queremos diferente en las diferentes páginas, sino, podemos dejarlo fuera de main para que se repita en todas las demás páginas)
+                Comúnmente se encontrará entre el header y el footer. 
+            </p>
+            <section id="Recetario personal" aria-label="Recetario personal">
+                <h2>Como inicio de sección podemos añadir un encabezado</h2>
+                <p>
+                    "Section" sirve para agrupar cierto grupo de información.
+                    Ejemplos sería si hiciéramos un libro de recetas, las
+                    agruparíamos por arroces, pasta, y postres italianos
+                </p>
+            </section>
+            <section id="Recetas de arroz" aria-label="Arroces">
+                <h2>Arroces italianos</h2>
+                <article>
+                    <p>
+                        "Article implica un tipo de información relacionada con
+                        nuestra sección que podría dividirse pero la información
+                        puede ser independiente de nuestra sección, puedo
+                        extraer el artículo del periódico (o blog) (o un
+                        artículo de venta), no leerme el periódico entero. Si el
+                        articulo es muy largo puedo incluirle distintas
+                        secciones al igual que en el periódico"
+                    </p>
+                </article>
+            </section>
+            <section id="Recetas de pasta" aria-label="Pasta">
+                <h2>Pasta italiana</h2>
+            </section>
+            <section id="Recetas de postres" aria-label="Postres">
+                <h2>Postres italianos</h2>
+            </section>
+            <aside>
+                <h2>Información extra sobre la cocina italiana</h2>
+                <p>
+                    Los "aside" sigue el criterio de información extra
+                    relacionado con nuestra web, dependerá de nosotros
+                    clasificar esa información con extra o como parte de un
+                    footer"
+                </p>
+            </aside>
+        </main>
+        <footer>
+            <p>&copy; 2026 Informaciones propias de Rocío</p>
+            <p>
+                El "footer" contiene información complementaria de nuestra
+                página web, como un pie de página por ejemplo con datos del
+                autor, nuestra dirección email con "address". Todo lo que sea
+                conmigo y que no esté relacionado con la información contenida
+                en mi web de recetas
+            </p>
+        </footer>
+    </body>
+</html>
